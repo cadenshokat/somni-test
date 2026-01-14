@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Somni - Sleep Apnea Brand Colors (Lofta-inspired) */
+    --background: 40 33% 98%;
+    --foreground: 210 50% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 50% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 50% 15%;
+
+    /* Deep navy - main brand color */
+    --primary: 210 50% 15%;
+    --primary-foreground: 40 33% 98%;
+
+    /* Light blue accent */
+    --secondary: 200 30% 95%;
+    --secondary-foreground: 210 50% 15%;
+
+    --muted: 200 20% 94%;
+    --muted-foreground: 210 20% 45%;
+
+    /* Soft teal accent */
+    --accent: 180 35% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 210 50% 15%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 210 50% 15%;
+    --sidebar-foreground: 40 33% 98%;
+    --sidebar-primary: 180 35% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 45% 22%;
+    --sidebar-accent-foreground: 40 33% 98%;
+    --sidebar-border: 210 45% 22%;
+    --sidebar-ring: 180 35% 45%;
+
+    --chart-1: 180 35% 45%;
+    --chart-2: 210 50% 40%;
+    --chart-3: 200 60% 50%;
+    --chart-4: 45 90% 55%;
+    --chart-5: 210 20% 60%;
+
+    --sidebar: 210 50% 15%;
+
+    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -2px hsl(0 0% 0% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 10px 10px -5px hsl(0 0% 0% / 0.04);
+    --shadow-2xl: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
+
+    --tracking-normal: 0em;
+    --spacing: 0.25rem;
+  }
+
+  .dark {
+    --background: 210 50% 10%;
+    --foreground: 40 33% 98%;
+
+    --card: 210 50% 15%;
+    --card-foreground: 40 33% 98%;
+
+    --popover: 210 50% 18%;
+    --popover-foreground: 40 33% 98%;
+
+    --primary: 180 35% 55%;
+    --primary-foreground: 210 50% 10%;
+
+    --secondary: 210 45% 22%;
+    --secondary-foreground: 40 33% 98%;
+
+    --muted: 210 30% 25%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 180 35% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 30% 25%;
+    --input: 210 30% 25%;
+    --ring: 180 35% 55%;
+
+    --sidebar-background: 210 50% 8%;
+    --sidebar-foreground: 40 33% 98%;
+    --sidebar-primary: 180 35% 55%;
+    --sidebar-primary-foreground: 210 50% 10%;
+    --sidebar-accent: 210 45% 18%;
+    --sidebar-accent-foreground: 40 33% 98%;
+    --sidebar-border: 210 30% 20%;
+    --sidebar-ring: 180 35% 55%;
+
+    --chart-1: 180 45% 55%;
+    --chart-2: 210 50% 50%;
+    --chart-3: 200 60% 60%;
+    --chart-4: 45 90% 60%;
+    --chart-5: 210 20% 50%;
+
+    --sidebar: 210 50% 8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
